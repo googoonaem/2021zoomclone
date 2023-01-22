@@ -5,8 +5,17 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="/public/css/style.css")
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css@1.12/mvp.css")
         title Noom
     body 
-        h1 it works!@
-        button adda
+        header 
+            h1 Noom
+        main 
+            form#nickname
+                input(type="text", placeholder="set your nickname", required)
+                button Enter
+            ul 
+            form#message
+                input(type="text", placeholder="write a message", required)
+                button Send
         script(src="/public/js/app.js")
